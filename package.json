@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "json-server --watch db.json"
+    "server": "json-server --watch db.json",
+    "browser": "browser-sync start --server --file . --host --port 5000 --startPath ./telas/lista_cliente.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browser-sync": "^2.27.9",
     "json-server": "^0.16.2"
   }
 }
